@@ -1,0 +1,4 @@
+VertexHelper.txt(32,21-30): error X4502: invalid input semantic 'POSITION': Legal indices are in [1,15]
+VertexHelper.txt(32,21-30): error X4502: invalid ps_3_0 input semantic 'POSITION'
+VertexHelper.txt(32,21-30): error X4502: invalid input semantic 'POSITION': Legal indices are in [1,15]
+VertexHelper.txt(32,21-30): error X4502: invalid ps_3_0 input semantic 'POSITION'

@@ -1,0 +1,58 @@
+struct VertexIn
+{
+	float4 PosL				: POSITION;
+	float3 NormalL			: NORMAL;
+	float2 UV				: TEXTURE;
+	float3 TangentL			: TANGENT;
+	float2 DisplacementTex  : DIS_TEXCOORD;
+};
+
+struct VertexOut
+{
+	float4 PosH				 : SV_POSITION;
+	float3 PosW				 : POSITION;
+	float4 PosL              : POSITION_L;
+	float3 NormalW			 : NORMAL_W;
+	float2 UV				 : TEXTURE;
+	float3 NormalL			 : NORMAL;
+	float2 DisplacementTex   : DIS_TEXCOORD;
+	float3 TangentL			 : TANGENT;
+};
+
+struct HullOut
+{
+	float4 PosH     : SV_POSITION;
+	float3 PosW     : POSITION;
+	float4 PosL		: POSITION_L;
+    float3 NormalW  : NORMAL_W;
+	
+	//Commented because no Tangent currently
+	//float3 TangentW : TANGENT;
+	
+	
+	float2 UV				 : TEXTURE;
+	float3 NormalL			 : NORMAL;
+	float2 DisplacementTex   : DIS_TEXCOORD;
+	float3 TangentL			 : TANGENT;
+};
+
+struct DomainOut
+{
+	float4 PosH				 : SV_POSITION;
+    float3 PosW				 : POSITION;
+	float4 PosL              : POSITION_L;
+    float3 NormalW			 : NORMAL_W;
+	float2 DisplacementTex   : DIS_TEXCOORD;
+	float2 UV				 : TEXTURE;
+	
+	//Commented because no Tangent currently
+	//float3 TangentW		 : TANGENT;
+	
+	
+	
+};
+
+/*struct HullOut
+{
+	float4 PosL : SV_POSITION;
+};*/
